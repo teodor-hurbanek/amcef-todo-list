@@ -13,7 +13,7 @@ const TodoListItem: React.FC<ITodoListItem> = (props: ITodoListItem) => {
   const { onUpdateTodo, onDeleteTodo } = props
 
   const today = new Date()
-  const expired = new Date(deadline) < new Date(today) ? 'border-solid border-error border-2' : ''
+  const expired = new Date(deadline) < new Date(today) && done === 'notyet' ? 'border-solid border-error border-2' : ''
 
   return (
     <li className={`card md:w-96 bg-base-200 text-neutral-content ${expired}`}>

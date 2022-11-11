@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 
@@ -39,6 +39,7 @@ const Form: React.FC<IForm> = (props: IForm) => {
         selected={startDate}
         onChange={(date: Date) => setStartDate(date)}
         dateFormat="MMMM d, yyyy hh:mm aa"
+        timeIntervals={5}
         showTimeSelect
         name="date"
         className="input input-bordered w-full"
