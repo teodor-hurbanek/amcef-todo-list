@@ -9,7 +9,7 @@ const Filter: React.FC<IFilter> = (props: IFilter) => {
   const { isList, onFilterItems } = props
 
   return (
-    <div className="flex items-center gap-2" onChange={event => onFilterItems(event)}>
+    <div className="flex justify-between items-center gap-2" onChange={event => onFilterItems(event)}>
       <div className="form-control">
         <label className="label cursor-pointer">
           <span className="label-text mr-2">All</span>
@@ -25,7 +25,7 @@ const Filter: React.FC<IFilter> = (props: IFilter) => {
       </div>
       <div className="form-control">
         <label className="label cursor-pointer">
-          <span className="label-text mr-2">Not yet</span>
+          <span className="label-text mr-2">Incomplete</span>
           <input type="radio" name="filter" className="radio radio-primary" value="notyet" disabled={!isList} />
         </label>
       </div>

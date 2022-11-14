@@ -138,7 +138,7 @@ const Todo = () => {
   return (
     <Layout title="List | Todo list">
       <div className="min-h-screen">
-        <div className="flex items-center gap-3 mb-5">
+        <div className="flex flex-col sm:flex-row items-center gap-3 mb-5">
           <SearchBar isList={list.length} value={searchValue} onSearchItem={handleSearchItem} />
           <Filter isList={list.length} onFilterItems={handleFilterItems} />
         </div>

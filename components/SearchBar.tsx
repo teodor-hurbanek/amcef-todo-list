@@ -12,7 +12,7 @@ const SearchBar: React.FC<ISearchBar> = (props: ISearchBar) => {
     <input
       type="text"
       placeholder="Search by title"
-      className="input input-bordered w-full max-w-xs"
+      className="input input-bordered w-full sm:max-w-xs"
       value={value}
       onChange={event => onSearchItem(event)}
       disabled={!isList}
